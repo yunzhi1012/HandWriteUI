@@ -1,0 +1,81 @@
+body {
+  padding: 0;
+  margin: 0;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+.hw-swiper {
+  width: 800px;
+  height: 400px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s;
+}
+
+.hw-swiper .swiper-l {
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  z-index: 10;
+}
+.hw-swiper .swiper-r {
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+}
+.hw-swiper .swiper-l:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.hw-swiper .swiper-r:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.hw-swiper .swiper-b {
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hw-swiper .swiper-b .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: grey;
+  transition: width 0.1s, height 0.1s;
+}
+
+.hw-swiper .swiper-b .circle.active {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(0, 122, 255);
+}
+.hw-swiper .swiper-b .circle:hover {
+  background-color: rgb(0, 122, 255);
+  cursor: pointer;
+}
